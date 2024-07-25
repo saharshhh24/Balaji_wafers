@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #fff34a;
+    color: #fff;
+    padding: 27px 0;
+    min-height: 26px;
+    position: relative; 
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+header .logo img {
+    width: 70px;
+    height: auto;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #333;
+}
+
+.product-section {
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #f7ffb1;
+}
+
+.product-section h1 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product-item p {
+    font-size: 1.1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.product-item button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+.additional-info {
+    background-color: lightgrey;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.additional-info .info-box {
+    display: inline-block;
+    margin: 28px 1rem;
+    padding: 5.5rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 152px;
+    width: calc(14% - 1rem);
+    animation: fadeInUp 1s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.additional-info .info-box img {
+    max-width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.additional-info .info-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.additional-info .info-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.reviews {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.review-item {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.review-item p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Add smooth transitions */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header animation */
+header {
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Product grid animation */
+.product-item {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional info box animation */
+.additional-info .info-box {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.info-box:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.info-box:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Review item animation */
+.review-item {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Footer animation */
+footer {
+    animation: slideIn 1s ease-out;
+    animation-delay: 1s;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top:hover {
+    background-color: #cc0000;
+}
