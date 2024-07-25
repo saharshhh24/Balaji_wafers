@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji Wafers - Contact Us</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="brand.png" alt="Balaji Wafers">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact-info">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <div class="contact-details">
+                    <div class="company-info">
+                        <h2>Company Information</h2>
+                        <p><strong>Company Name:</strong> Balaji Wafers</p>
+                        <p><strong>Address:</strong> 123 Snack Street, Mumbai, India</p>
+                        <p><strong>Phone:</strong> +91 123 456 7890</p>
+                        <p><strong>Email:</strong> <a href="mailto:info@balajiwafers.com">info@balajiwafers.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="distributor-enquiry">
+            <div class="container">
+                <h2>Distributor Enquiry Form</h2>
+                <form action="submit_enquiry.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company:</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit Enquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy;2024 Akash Balaji Wafers | Made by Saharsh</p>
+        </div>
+    </footer>
+    <script src="script4.js"></script>
+</body>
+</html>
